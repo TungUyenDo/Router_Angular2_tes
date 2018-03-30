@@ -9,17 +9,14 @@ import { MainWrongUrlComponent } from "./wrong-url/main-wrong-url/main-wrong-url
 
 
 const MainRouters: Routes = [
-    {path: '',redirectTo: '', pathMatch: 'full'},
     { path: '', component: PassCodeComponent ,
         children:[
-            {path: '',redirectTo: 'pass-code', pathMatch: 'full'},
-            { path: 'pass-code', component: MainPassCodeComponent},
+            { path: '', component: MainPassCodeComponent},
         ]
     },
     { path: 'wrong-url', component: WrongUrlComponent ,
         children:[
-            {path: '',redirectTo: 'wrong-url', pathMatch: 'full'},
-            { path: 'wrong-url', component: MainWrongUrlComponent},
+            { path: '', component: MainWrongUrlComponent},
         ]
     },
     

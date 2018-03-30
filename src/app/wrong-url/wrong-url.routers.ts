@@ -6,8 +6,8 @@ import { MainWrongUrlComponent } from './main-wrong-url/main-wrong-url.component
 
 
 const routers_wrongUrl: Routes = [
-    {path: '',redirectTo: '', pathMatch: 'full'},
-    { path: '', component: MainWrongUrlComponent },
+    // {path: '',redirectTo: '', pathMatch: 'full'},
+    // { path: '', component: MainWrongUrlComponent },
 ];
 
 @NgModule({

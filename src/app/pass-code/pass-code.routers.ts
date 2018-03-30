@@ -6,8 +6,8 @@ import { MainPassCodeComponent } from './main-pass-code/main-pass-code.component
 
 
 const routers_passCode: Routes = [
-    {path: '',redirectTo: '', pathMatch: 'full'},
-    { path: '', component: MainPassCodeComponent },
+    // {path: '',redirectTo: '', pathMatch: 'full'},
+    // { path: '', component: MainPassCodeComponent },
 ];
 
 @NgModule({
