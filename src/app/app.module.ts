@@ -4,26 +4,29 @@ import { AppRouters } from "./app.routers";
 
 
 import { AppComponent } from './app.component';
-import {PassCodeComponent} from "./pass-code/pass-code.component";
+import {PassCodeModule} from "./pass-code/pass-code.module";
 import {MainPassCodeComponent} from "./pass-code/main-pass-code/main-pass-code.component";
-import { WrongUrlComponent } from './wrong-url/wrong-url.component';
+
+import {WrongUrlModule} from './wrong-url/wrong-url.module';
 import { MainWrongUrlComponent } from './wrong-url/main-wrong-url/main-wrong-url.component';
 
 
 
 
 @NgModule({
+  //import component child
   declarations: [
     AppComponent,
-    PassCodeComponent,
     MainPassCodeComponent,
-    WrongUrlComponent,
     MainWrongUrlComponent,
     
   ],
+  //import module parent 
   imports: [
     BrowserModule,
-    AppRouters
+    AppRouters,
+    WrongUrlModule,
+    PassCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
